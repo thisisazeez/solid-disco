@@ -5,9 +5,9 @@ module.exports = (app) => {
   
     app.get("/get-all", App.findAll);
   
-    app.get("/message/:titleId", App.findOne);
+    app.get("/slug/:titleId", App.findOne);
   
-    app.put("/message/:titleId", App.update);
+    app.put("/slug/:titleId", App.update);
   
-    app.delete("/message/:titleId", App.delete);
-  };
+    app.delete("/slug/:titleId", App.delete);
+};
